@@ -16,15 +16,24 @@ function bs() {
     }
   });
 
+
   watch("./*.html").on('change', browserSync.reload);
   watch("./sass/**/*.sass", serveSass);
   watch("./js/*.js").on('change', browserSync.reload);
 };
 
+// function serveSass() {
+//   return src("./sass/*.sass")
+//     .pipe(sass())
+//     .pipe(dest("./css"))
+//     .pipe(browserSync.stream());
+// }; версия Артема
+
 function serveSass() {
-  return src("./sass/*.sass")
+  return src('./sass/**/*.scss')
     .pipe(sass())
-    .pipe(dest("./css"))
+    .pipe(dest('./css'))
     .pipe(browserSync.stream());
 };
+
 exports.serve = bs;
