@@ -1,8 +1,4 @@
-const {
-  src,
-  dest,
-  watch
-} = require('gulp');
+const {src, dest, watch} = require('gulp');      
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 
@@ -14,26 +10,25 @@ function bs() {
     server: {
       baseDir: "./"
     }
-  });
+   });
 
-
-  watch("./*.html").on('change', browserSync.reload);
-  watch("./sass/**/*.sass", serveSass);
-  watch("./js/*.js").on('change', browserSync.reload);
+   watch("./*.html").on('change', browserSync.reload);
+   watch("./sass/**/*.sass", serveSass);
+   watch("./js/*.js").on('change', browserSync.reload);
 };
-
-// function serveSass() {
-//   return src("./sass/*.sass")
-//     .pipe(sass())
-//     .pipe(dest("./css"))
-//     .pipe(browserSync.stream());
-// }; версия Артема
 
 function serveSass() {
-  return src('./sass/**/*.scss')
+  return src("./sass/*.sass")
     .pipe(sass())
-    .pipe(dest('./css'))
+    .pipe(dest("./css"))
     .pipe(browserSync.stream());
-};
+}; 
+
+// function serveSass() {
+//   return src('./sass/**/*.scss')
+//     .pipe(sass())
+//     .pipe(dest('./css'))
+//     .pipe(browserSync.stream());
+// };
 
 exports.serve = bs;
