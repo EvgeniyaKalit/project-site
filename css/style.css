@@ -1,49 +1,107 @@
 @font-face {
   font-family: 'Futura Book';
-  src: url("..fonts/futura/FuturaBookC.woff") format("woff"), url("..fonts/futura/FuturaBookC.woff2") format("woff"), font-weight normal font-style normal font-display wrap; }
+  src: url("..fonts/futura/FuturaBookC.woff") format("woff"), url("..fonts/futura/FuturaBookC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
 
 @font-face {
   font-family: 'Futura Demi';
-  src: url("..fonts/futura/FuturaDemiC.woff") format("woff"), url("..fonts/futura/FuturaDemiC2.woff2") format("woff"), font-weight normal font-style normal font-display wrap; }
+  src: url("..fonts/futura/FuturaDemiC.woff") format("woff"), url("..fonts/futura/FuturaDemiC2.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
 
 .button {
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
-  text-transform: uppercase; }
-  .button--primary {
-    background-color: #E38873;
-    color: #fff; }
+  text-transform: uppercase;
+}
+
+.button--primary {
+  background-color: #E38873;
+  color: #fff;
+}
 
 .container {
   max-width: 1256px;
-  margin: auto; }
+  margin: auto;
+}
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
-  padding: 24px 0; }
+  padding: 24px 0;
+}
 
 .menu {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+}
 
 .logo {
   color: #E38873;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .nav__item {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 40px; }
+  margin-right: 40px;
+}
 
 .phone {
-  color: #E38873; }
+  color: #E38873;
+}
 
 .contacts__phone {
-  margin-right: 45px; }
+  margin-right: 45px;
+}
+
+.hero {
+  position: relative;
+  padding-top: 100px;
+  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+.hero__instagram {
+  position: absolute;
+  max-width: 80px;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.hero .instagram {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #131313;
+}
+
+.hero .instagram__link {
+  text-transform: uppercase;
+  color: #E38873;
+  text-decoration: none;
+  transform: rotate(90deg);
+}
+
+.hero .title {
+  margin: 0;
+}
 
 body {
   font-family: 'Futura Book', san-serif;
-  font-size: 14px; }
+  font-size: 14px;
+}
