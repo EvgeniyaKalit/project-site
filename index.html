@@ -1,65 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  
 </head>
+
 <body>
   <header class=header>
-  <div class="container">
-    <div class="menu"> 
-      <!--блок задаем menu потому что точно такойе же внизу в футере и мы не можем назвать header -->
-      <div class="logo menu__logo">Repair Design Project</div>
-      <!--блок логотип с миксованием logo-класс блока; menu__logo-класс элемента -->
-      <nav class="nav menu__nav"> 
-        <!--блок навигационное меню с миксованием в которую вхдят 6 ссылок-->
-        <a href="#" class="nav__item">Главная</a>
-        <a href="#" class="nav__item">Проекты</a>
-        <a href="#" class="nav__item">Замер</a>
-        <a href="#" class="nav__item">Команда</a>
-        <a href="#" class="nav__item">Отзывы</a>
-        <a href="#" class="nav__item">Контакты</a>
-        <!-- появляются первые элементы БЭМ item в отрыве от блока nav не используются -->
-      </nav>
-      <div class="contacts menu__contacts">
-        <!-- маленький контейнер справа содержит тел и кнопку, блок (третий по ряду) с миксом -->
-        <a href="+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-        <button class="button contacts__button button--primary">Заказать звонок</button>
-        <!-- button некий универсальный класс который описывает все кнопки на сайте -->
-        <!-- второй класс button занесем некие общие параметры у кнопок что их объединяет, в нем записан стиль блока-->
-        <!-- contacts__button стиль элемента -->
-        <!-- button--primary модификатор что отличает данную кнопку -->
-      </div>     
+    <div class="container">
+      <div class="menu">
+        <!--блок задаем menu потому что точно такойе же внизу в футере и мы не можем назвать header -->
+        <div class="logo menu__logo">Repair Design Project</div>
+        <!--блок логотип с миксованием logo-класс блока; menu__logo-класс элемента -->
+        <nav class="nav menu__nav">
+          <!--блок навигационное меню с миксованием в которую вхдят 6 ссылок-->
+          <a href="#" class="nav__item">Главная</a>
+          <a href="#" class="nav__item">Проекты</a>
+          <a href="#" class="nav__item">Замер</a>
+          <a href="#" class="nav__item">Команда</a>
+          <a href="#" class="nav__item">Отзывы</a>
+          <a href="#" class="nav__item">Контакты</a>
+          <!-- появляются первые элементы БЭМ item в отрыве от блока nav не используются -->
+        </nav>
+        <div class="contacts menu__contacts">
+          <!-- маленький контейнер справа содержит тел и кнопку, блок (третий по ряду) с миксом -->
+          <a href="+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+          <button class="button contacts__button button--primary">Заказать звонок</button>
+          <!-- button некий универсальный класс который описывает все кнопки на сайте -->
+          <!-- второй класс button занесем некие общие параметры у кнопок что их объединяет, в нем записан стиль блока-->
+          <!-- contacts__button стиль элемента -->
+          <!-- button--primary модификатор что отличает данную кнопку -->
+        </div>
       </div>
-      <!-- menu -->   
-  </div>
-  <!-- /.container -->
+      <!-- menu -->
+    </div>
+    <!-- /.container -->
   </header>
   <main>
     <!-- попадет в блок main все кроме футера, главное сдержимое текущей старницы -->
     <section class="hero">
       <div class="instagram hero__instagram">
-        <a href="#" class="instagram__link">Instagram</a> 
-         </div>
-    <div class="hero__content">
+        <a href="#" class="instagram__link">Instagram</a>
+      </div>
       <div class="container">
-      <h1 class="title hero__title">Турецкий ремонт в Ростове-на-дону</h1>   
-      <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p> 
-      <button class="button hero__button button--primary">Рассчитать стоимость</button>
-      <button class="button hero__button button--outline">Отправить заявку</button>    
-    </div>
+        <div class="hero__content">
+          <h1 class="title hero__title">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
+          <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от
+            стоимости материалов за счет организации работы</p>
+          <button class="button hero__button button--primary">Рассчитать стоимость</button>
+          <button class="button hero__button button--outline">Отправить заявку</button>
+        </div>
+        <!-- /.hero__content -->
+      </div>
       <!-- /.container -->
-    </div>
-    <!-- /.hero__content --> 
-    <a href="#" class="scroll-down">листайте вниз</a>
-    <!-- кнопка слева внизу на главной картинке -->
-  </section>  
- </main>  
+      <a href="#" class="hero__scroll-down">листайте вниз</a>
+      <!-- кнопка слева внизу на главной картинке -->
+    </section>
+  </main>
 </body>
-</html>
 
-    
-  
+</html>  
+          
