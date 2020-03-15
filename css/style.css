@@ -20,9 +20,9 @@
   .button:hover {
     cursor: pointer; }
   .button--primary {
-    background-color: #E38873;
+    background-color: #E3B873;
     color: #fff;
-    box-shadow: 0px 5px 15px rgba(227, 136, 115, 0.2);
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     transition: box-shadow 0.3s; }
     .button--primary:hover {
       box-shadow: none; }
@@ -55,7 +55,7 @@ body {
       content: '';
       width: 32px;
       height: 2px;
-      background-color: #E38873;
+      background-color: #E3B873;
       margin: 0 10px; }
 
 .header {
@@ -73,7 +73,7 @@ body {
   align-items: center; }
 
 .logo {
-  color: #E38873;
+  color: #E3B873;
   text-transform: uppercase; }
 
 .nav__item {
@@ -84,10 +84,10 @@ body {
   transition: color 0.2s; }
 
 .nav:hover {
-  color: #E38873; }
+  color: #E3B873; }
 
 .phone {
-  color: #E38873; }
+  color: #E3B873; }
 
 .contacts__phone {
   margin-right: 45px; }
@@ -111,7 +111,8 @@ body {
     background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
     max-width: 670px;
-    position: relative; }
+    position: relative;
+    margin-left: 60px; }
   .hero__text {
     font-size: 22px;
     max-width: 500; }
@@ -141,7 +142,7 @@ body {
       background: url("../img/down-arrow.svg") no-repeat center;
       width: 30px;
       height: 30px;
-      border: 1px solid #E38873;
+      border: 1px solid #E3B873;
       border-radius: 50%;
       margin-left: 12px; }
   .hero .instagram {
@@ -153,14 +154,14 @@ body {
       display: flex;
       align-items: center;
       text-transform: uppercase;
-      color: #E38873;
+      color: #E3B873;
       text-decoration: none;
       transform: rotate(90deg); }
       .hero .instagram__link:after {
         content: '';
         height: 1px;
         width: 50px;
-        background-color: #E38873;
+        background-color: #E3B873;
         line-height: 0.8;
         margin-left: 8px; }
   .hero .title {
@@ -169,4 +170,4 @@ body {
     text-transform: uppercase;
     font-size: 40px; }
     .hero .title--primary {
-      color: #E38873; }
+      color: #E3B873; }
