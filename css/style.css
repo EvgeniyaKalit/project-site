@@ -86,8 +86,9 @@ html {
 body {
   font-family: 'Futura Book', san-serif;
   font-size: 1rem; }
-  body img {
-    max-width: 100%; }
+
+img {
+  max-width: 100%; }
 
 .section {
   padding: 60px 0; }
@@ -230,7 +231,7 @@ body {
   justify-content: space-between; }
 
 .col {
-  flex-basis: 32%; }
+  flex-basis: 33%; }
 
 .card__text {
   position: relative;
@@ -317,6 +318,33 @@ body {
   .modal__button {
     align-self: flex-end; }
 
+.desing__content {
+  max-width: 53.5rem;
+  margin: auto; }
+
+.desing__text {
+  text-align: center;
+  font-size: 1.42rem;
+  line-height: 1.92rem;
+  color: #363636; }
+
+.desing-work {
+  background-color: #131313;
+  width: 100%; }
+
+.desing-fon {
+  background-color: #fff;
+  width: 100%;
+  height: 22rem; }
+
+.col {
+  flex-basis: 33%; }
+  .col__fon {
+    position: relative;
+    margin-top: -20rem;
+    padding-left: 20px;
+    padding-right: 20px; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
@@ -364,3 +392,14 @@ body {
 @media screen and (max-height: 554px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-width: 760px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .col__fon {
+    background-color: #131313; }
+  .desing__card {
+    margin-bottom: 5rem; }
+  .card__text {
+    margin-left: 0; } }
