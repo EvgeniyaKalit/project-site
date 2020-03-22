@@ -392,14 +392,3 @@ img {
 @media screen and (max-height: 554px) {
   .hero__scroll-down {
     display: none; } }
-
-@media screen and (max-width: 760px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .col__fon {
-    background-color: #131313; }
-  .desing__card {
-    margin-bottom: 5rem; }
-  .card__text {
-    margin-left: 0; } }
