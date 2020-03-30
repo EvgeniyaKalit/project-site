@@ -77,6 +77,17 @@
   max-width: 1256px;
   margin: auto; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col-30 {
+  flex-basis: 30%; }
+
+.col-50 {
+  width: 50%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -92,10 +103,32 @@ img {
 
 .section {
   padding: 60px 0; }
+  .section--dark {
+    background-color: #131313;
+    color: #fff; }
   .section-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive; }
+    text-align: center; }
+    .section-title--left {
+      text-align: left; }
+    .section-title__heading {
+      text-transform: uppercase;
+      font-family: 'Yeseva One', cursive;
+      line-height: 138%; }
+      .section-title__heading--primery {
+        color: #E3B873; }
+    .section-title__world {
+      display: flex;
+      align-items: center; }
+      .section-title__world::after {
+        content: '';
+        width: 90px;
+        height: 2px;
+        background-color: #E3B873;
+        margin-left: 2rem; }
+    .section-title__text {
+      font-size: 1.28rem;
+      line-height: 2.07rem;
+      max-width: 31.57rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -159,6 +192,15 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #131313;
+    width: 100%;
+    height: 3.46rem; }
   .hero__content {
     max-width: 47.85rem;
     position: relative;
@@ -176,6 +218,7 @@ img {
     top: 0; }
   .hero__scroll-down {
     position: absolute;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,7 +230,7 @@ img {
     text-transform: uppercase;
     color: #fff;
     text-decoration: none; }
-    .hero__scroll-down:after {
+    .hero__scroll-down::after {
       content: '';
       background: url("../img/down-arrow.svg") no-repeat center;
       width: 30px;
@@ -207,13 +250,13 @@ img {
       color: #E3B873;
       text-decoration: none;
       transform: rotate(90deg); }
-      .hero .instagram__link:after {
+      .hero .instagram__link::after {
         content: '';
         height: 1px;
         width: 50px;
-        background-color: #E3B873;
         line-height: 0.8;
-        margin-left: 8px; }
+        margin-left: 7px;
+        background-color: #E3B873; }
   .hero .title {
     margin: 0;
     font-family: 'Yeseva One', cursive;
@@ -222,16 +265,48 @@ img {
     .hero .title--primary {
       color: #E3B873; }
 
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    margin-bottom: 2.42rem;
+    padding-bottom: 2rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    font-family: 'Yeseva One', cursive;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #fff; }
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  block-size: 42px;
+  width: 42px;
+  height: 14px; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  left: 0;
+  background: url("../img/arrow-prev.svg") no-repeat center; }
+
+.swiper-button-next {
+  background: url("../img/arrow-next.svg") no-repeat center; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: -2px; }
+
 .types__section-title {
   margin-bottom: 2rem; }
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.col {
-  flex-basis: 33%; }
 
 .card__text {
   position: relative;
@@ -337,13 +412,9 @@ img {
   width: 100%;
   height: 22rem; }
 
-.col {
-  flex-basis: 33%; }
-  .col__fon {
-    position: relative;
-    margin-top: -20rem;
-    padding-left: 20px;
-    padding-right: 20px; }
+.col-30__fon {
+  position: relative;
+  margin-top: -20rem; }
 
 @media screen and (max-width: 1200px) {
   html {
