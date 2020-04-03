@@ -46,6 +46,9 @@
         next.css('left', prev.width() + 10 + bullets.width() + 10)
         // у кнопки prev мы выясняем ширину при помощи функции width в jQuery и тогда эта кнопка отдвинится на ширину кнопки prev.Если добавить например prev.width() +10, то кнопочка отъедет на 10px
         bullets.css('left', prev.width() + 10)
+        
+        new WOW().init();
+        // активируем анимацию
       })
     
     
