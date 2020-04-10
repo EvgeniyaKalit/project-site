@@ -535,6 +535,10 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    max-width: 66.07rem;
+    margin: auto;
+    margin-bottom: 4rem; }
 
 @media screen and (max-width: 1200px) {
   html {
