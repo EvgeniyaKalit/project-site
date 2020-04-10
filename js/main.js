@@ -49,8 +49,48 @@
         
         new WOW().init();
         // активируем анимацию
+
+        // валидация формы
+        $('.modal__form').validate({
+          errorClass: "invalid",
+          rules: {
+            // simple rule, converted to {required:true}
+            userName: {
+              required: true,
+              minlength: 2
+              // имя не меньше двух символов
+            },
+            userPhone: "required",
+            // compound rule, поле обязательно для заполнения, строчное правило
+            userEmail: {
+              required: true,
+              email: true
+              // поле обязательно для заполнения и правильно заполнен Email (блок)
+            }
+        
+
+        },
+        // что писать внутри функции validate это есть в API Documentation, options for the validate method, в правиле rules
+        
+        // сообщения
+        messages: {
+          userName: {
+            required: "Заполните поле",
+            minlength: "Имя не короче двух букв"
+          }, 
+          userPhone: "Заполните поле",
+          userEmail: {
+            required: "Заполните поле", 
+            email: "Введите корректный email"
+          }
+        }
+
       })
-    
+      // маска телефона
+      //placeholder вводит шаблон заранее для пользователя, то есть его видно при открытиии сразу
+      $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "__/__/____"});
+
+    })  
     
   
       
@@ -60,3 +100,5 @@
     
   
 
+
+          
