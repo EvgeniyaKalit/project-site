@@ -89,8 +89,23 @@
       // маска телефона
       //placeholder вводит шаблон заранее для пользователя, то есть его видно при открытиии сразу
       $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "__/__/____"});
-
-    })  
+     var player;
+      $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+         // при клике на кнопку video__play будет срабатывать функция с ютюба
+          height: '465',
+          width: '100%',
+          videoId: 'x3o0ByFNB7Q',
+          events: {
+            'onReady': videoPlay,
+            
+          }
+        });
+      })
+      function videoPlay(event) {
+        event.target.playVideo();
+      }
+    });  
     
   
       
